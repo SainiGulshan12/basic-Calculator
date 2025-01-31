@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#f09af8, #ff7077,#f7afb2);
+}
+.container{
+    border: 1px solid #fff;
+    padding: 2rem 2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+    background: linear-gradient(45deg,#0a0a0a,#3a4452);
+    overflow: hidden;
+}
+.container #input-box {
+    border: none;
+    width: 19rem;
+    font-size: 2.3em;
+    text-align: end;
+    color: #fff;
+    background: transparent;
+    padding: 1.2rem 1.5rem;
+    border-radius: .63rem;
+    box-shadow: 0px 3px 15px rgba(0,0,0,.2 );
+  }
+  .container #input-box::placeholder{
+    color: #fff;
+}
+.container #input-box:focus{
+    outline: none;
+    color: #fff;
+}
+  .container .calculator-keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    margin-top: 1rem;
+}
+.container button:nth-child(1),
+.container button:nth-child(2),
+.container button:nth-child(3),
+.container button:nth-child(4){
+    color: #f9544c;
+    border-radius: .5rem;
+    padding: .3rem 1rem;
+}
+.container button:nth-child(1):hover,
+.container button:nth-child(2):hover,
+.container button:nth-child(3):hover,
+.container button:nth-child(4):hover{
+    background: #f9544c;
+    color: #fff;
+}
+.container button{
+    padding: 1.2rem;
+    border: none;
+    background: transparent;
+    color: #fff;
+    margin: .2rem;
+    font-size: 1em;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.container button:hover{
+    background: #f9544c;
+}
+.container button:nth-child(12),
+.container button:nth-child(16){
+    transition: 0.3s;
+    background: #f9544c;
+}
+.container button:nth-child(20){
+    grid-column: 4/5;
+    grid-row: 5/ span 5;
+    background: #f9544c;
+    border-radius: 1.9rem;
+    transition: 0.3s;
+}
+.container button:nth-child(20):hover,
+.container button:nth-child(12):hover,
+.container button:nth-child(16):hover{
+    border: 1px solid #f9544c;
+    background: none;
+    color: #f9544c;
+}
+.container button:active,
+.container .enter:active,
+.container .del:active{
+    transform: scale(0.9);
+}
